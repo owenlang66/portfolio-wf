@@ -1,0 +1,284 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    width: 100%;
+}
+
+
+.navbar.navbar-expand-sm.navbar-light.bg-light {
+    width: 100%;
+}
+
+#navbar {
+    background-color: #605d30;
+    height: 80px;
+    box-shadow: 0px 12px 5px black;
+}
+
+.nav-link {
+    color: white;
+}
+
+.intro {
+    display: grid;
+    place-items: center;
+    padding-top: 200px;
+    background-image: url("./imgs/pexels-lumn-167698.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(90%);
+}
+
+#title {
+    color: white;
+    font-size: 3rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-bottom: 300px;
+}
+
+.parallax {
+    background-image: url("./imgs/pexels-ollie-craig-5711153.jpg");
+    min-height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax1 {
+    background-image: url("./imgs/pexels-pixabay-220201.jpg");
+    min-height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.row {
+    align-items: center;
+}
+
+#aboutMe {
+    background-color: #605d30;
+    min-height: 400px;
+}
+
+#skills {
+    background-color: #92864b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#projects {
+    background-color: #5e572a;
+}
+
+#projects>.row>.col-sm-6 {
+    color: white;
+}
+
+/* .container-fluid>.img {
+    width: 350px;
+    z-index: 0;
+    height: 350px;
+} */
+
+#aboutMeImgs{
+    display: flex;
+}
+
+.col-sm-5>img {
+    width: 50%;
+    border-radius: 90px;
+    margin-left: 10px;
+}
+
+.col-sm-5>img:nth-child(1){
+    width: 75%;
+}
+
+#icons {
+    align-items: center;
+}
+
+.icons {
+    margin: 5% 0px 3% 20%;
+}
+
+.icons>img {
+    width: 40%;
+    border-radius: 10px;
+}
+
+.projHead{
+    display: grid;
+    place-items: center;
+    background-color: #5e572a;
+    font-size: 75px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+}
+
+.col-sm-4>p>a>img {
+    width: 20px;
+}
+
+#project{
+    margin-bottom: 15px;
+}
+
+
+#calc{
+    border-radius: 30px;
+    margin-top: 20px;
+    max-height: 400px;
+    max-width: 300px;
+}
+
+#prof{
+    border-radius: 30px;
+    margin-top: 20px;
+    max-height: 400px;
+    max-width: 400px;
+    margin-bottom: 15px;
+}
+
+#contacts {
+    border: 2px solid rgb(153, 153, 153);
+    padding: 5px;
+    border-radius: 25px;
+}
+
+
+#form {
+    border: 2px solid rgb(153, 153, 153);
+    padding: 5px;
+    border-radius: 25px;
+    margin-left: 10%;
+}
+
+#btn {
+    display: none;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    /* z-index: 99; */
+    border: 2px solid green;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 40px;
+    font-size: 15px;
+}
+
+#btn:hover {
+    background-color: green;
+    color: black;
+}
+
+/* animations */
+
+.reveal-text-container .reveal-text {
+    font-family: sans-serif;
+    font-size: 80px;
+    font-weight: 800;
+    position: relative;
+    animation: activateText forwards;
+    animation-delay: 1000ms;
+    color: transparent;
+}
+
+.reveal-text-container .reveal {
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: #353c19;
+    left: 0;
+    animation: revealText 1500ms ease-out;
+}
+
+.reveal-text-container1 .reveal-text {
+    position: relative;
+    animation: activateText forwards;
+    animation-delay: 1000ms;
+    color: transparent;
+}
+
+
+.reveal-text-container1 .reveal {
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: #605d30;
+    left: 0;
+    animation: revealText 1500ms ease-out;
+}
+
+.reveal-text-container2 .reveal-text {
+    position: relative;
+    animation: activateText forwards;
+    animation-delay: 1000ms;
+    color: transparent;
+}
+
+.reveal-text-container2 .reveal {
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: #92864b;
+    left: 0;
+    animation: revealText 1500ms ease-out;
+}
+
+@keyframes revealText {
+    70% {
+        width: 100%;
+        left: 0;
+    }
+
+    100% {
+        width: 0%;
+        left: 100%;
+    }
+}
+
+@keyframes activateText {
+    to {
+        color: white;
+    }
+}
+
+
+/* mess around */
+@keyframes revealText {
+    70% {
+        width: 100%;
+        left: 0;
+    }
+
+    100% {
+        width: 0%;
+        left: 100%;
+    }
+}
+
+@keyframes activateText {
+    to {
+        color: white;
+    }
+}

@@ -1,4 +1,4 @@
 # Owen Lang's Portfolio  
 
-![Alt text](imgs/PortPreview.png)
-# portfolio-ef
+![My Portfolio](imgs/PortPreview.png)
+
